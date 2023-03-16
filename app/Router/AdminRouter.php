@@ -6,10 +6,6 @@ use App\Controllers\AuthController;
 return function (App $app) {
     $app->group("/api", function ($app) {
 
-         /*  $app->group("/auth",function ($app) {
-                $app->post("/login", [AuthController::class, "Login"]);
-          }); */
-
         $app->group("/users", function ($app) {
             $app->get("/view-user", [UserController::class, 'viewUser']);
             $app->get("/view-user/{id}", [UserController::class, 'viewUserId']);
