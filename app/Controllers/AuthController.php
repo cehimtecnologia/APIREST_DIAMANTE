@@ -116,9 +116,7 @@ class AuthController
          foreach ($user as $users)
         {
             $hashedPassword = $users->PASSWORD;
-        }  
-
-       // $verify = password_verify($password,$hashedPassword);
+        } 
 
         if(password_verify($password,$hashedPassword) == false)
         {

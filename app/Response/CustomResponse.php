@@ -13,7 +13,6 @@ class CustomResponse
             ->withStatus(200);
     }
 
-
      public function is200ResponseService($response,$responseMessage)
     {
         $response->getBody()->write($responseMessage);

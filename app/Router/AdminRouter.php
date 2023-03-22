@@ -1,7 +1,6 @@
 <?php
 use Slim\App;
 use App\Controllers\UserController;
-use App\Controllers\AuthController;
 
 return function (App $app) {
     $app->group("/api", function ($app) {

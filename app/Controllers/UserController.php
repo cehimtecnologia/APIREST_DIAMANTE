@@ -16,13 +16,15 @@ use App\Validation\Validator;
 use Respect\Validation\Exceptions\Exception;
 use Respect\Validation\Validator as v;
 
+use App\Interfaces\SetWooResponse;
+
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\RequestInterface as Request;
-
 class UserController
 {
     protected $customResponse;
     protected $validator;
+    protected $setWoo;
     protected $guestEntry;
     protected $guestEntryroll;
     protected $guestEntryaudit;
